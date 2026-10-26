@@ -1,6 +1,6 @@
 # Main Dockerfile for flagd builds
 # Build the manager binary
-FROM --platform=$BUILDPLATFORM golang:1.27-alpine@sha256:4c9fe60190a2a3350ddc51de80d0224b8a6698d12bdfc999fee45ea9d6c46dbc AS builder
+FROM --platform=$BUILDPLATFORM golang:1.27-alpine@sha256:b8c9b82affbbb82a020bbcf998dad2ba9516944ac7e883524642a481a9505e9c AS builder
 # The toolchain determines which FIPS snapshots exist, so pin it.
 ENV GOTOOLCHAIN=local
 
